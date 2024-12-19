@@ -1,6 +1,6 @@
 import sys
 from document_parser import NotSupportedFormat, FlashCardParser
-import difflib
+from generator import FlashCardGenerator
 
 def main(argc: int, argv: list):
     if argc < 2:
@@ -17,7 +17,16 @@ def main(argc: int, argv: list):
         return -2
 
     #content ready to be used
+    flashcards = FlashCardGenerator.generateFlashcard(content)
+    output = ""
+    for flashcard in flashcards:
+        print(flashcard)
+        output += flashcard
+        output += "\n"
 
+    output_file = open("flashcards.txt", "w")
+    output_file.write(output)
+    output_file.close()
     return 0
 
 
