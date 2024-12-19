@@ -1,5 +1,6 @@
 import sys
 from document_parser import NotSupportedFormat, FlashCardParser
+import difflib
 
 def main(argc: int, argv: list):
     if argc < 2:
@@ -15,7 +16,8 @@ def main(argc: int, argv: list):
     except FileNotFoundError as e:
         return -2
 
-    print(content[:30])
+    #content ready to be used
+
     return 0
 
 

@@ -1,4 +1,5 @@
-
+from docx import Document
+from pypdf import PdfReader
 
 class NotSupportedFormat(Exception):
     def __init__(self, format:str):
@@ -12,20 +13,28 @@ class FlashCardParser:
     def __init__(self,filename:str):
         self.__filename = filename
 
-
     def __pdfparser(self):
-        raise NotImplementedError("pdf parse is not yet implemented")
-
+        # raise NotImplementedError("pdf parse is not yet implemented")
+        text=""
+        reader = PdfReader(self.__filename)
+        for page in reader.pages:
+            text+=page.extract_text().replace('\n','')
+        return text.strip(' ')
 
     def __docxparser(self):
-        raise NotImplementedError("docx parse is not yet implemented ")
+        doc = Document(self.__filename)
+        text=""
+        for paragraph in doc.paragraphs:
+            text+=paragraph.text+' '
+        return text.strip(' ')
 
 
     def __txtparser(self):
         file = open(self.__filename,"r")
         text = file.read()
+        text.replace('\n','')
         file.close()
-        return text
+        return text.strip(' ')
 
 
     def parse(self):
