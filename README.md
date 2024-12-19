@@ -6,10 +6,16 @@
 - Generate clear and concise questions and answers for effective studying
 - Provide a user-friendly interface for seamless interaction
 
+## Requirement Pool
+P0: 
+- Extract important information from PDFs
+- Generate questions and answers from extracted information
+- Create a user-friendly interface for uploading, reviewing, and accessing flashcards
+
 ## Competitive Analysis
-Flashcard App: A Limited PDF integration, lacks automatic question generation
-StudyToolX: Offers PDF integration and question generation, but lacks user-friendly interface
-FlashyCardsPro: User-friendly interface, but lacks automatic PDF information extraction
+- Flashcard App: A Limited PDF integration, lacks automatic question generation
+- StudyToolX: Offers PDF integration and question generation, but lacks user-friendly interface
+- FlashyCardsPro: User-friendly interface, but lacks automatic PDF information extraction
 
 ## Implementation approach
 
