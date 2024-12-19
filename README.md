@@ -29,5 +29,5 @@ We will use Python as the programming language for this project. We will analyze
     - Allows review of the generated flashcards.
 
 - user_interface.py:
-    - upload_pdf(pdf_path: str): Uploads the PDF file to be processed.
-    - display_flashcards(flashcards: list): Displays the generated flashcards to the user.
+    - Uploads the PDF file to be processed.
+    - Displays the generated flashcards to the user.
