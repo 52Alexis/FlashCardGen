@@ -1,9 +1,13 @@
 
 
-
 class FlashCardGenerator:
     def generateFlashcard(self,source: str):
-        flashcards = []
+        tokens = self.generateTokens(source)
 
+        flashcards = []
         return flashcards
 
+    def generateTokens(self,data_to_tokenize):
+
+        tokens = []
+        return tokens
