@@ -29,7 +29,8 @@ FlashCardGen is implemented in a Jupyter notebook. The notebook leverages open-s
 ## File List
 - **flashcardgen.pynb**: The Jupyter notebook that contains all the code for extracting information from PDFs and generating flashcards.
 
-## Installation
+## How to run the code
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com//52Alexis/FlashCardGen.git
+2. To use the predefined models for summarizing and generating flashcards, you need to create your Huggingface and Groqcloud API keys and paste them in the appropriate locations. 
