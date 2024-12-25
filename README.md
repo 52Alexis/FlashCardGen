@@ -1,33 +1,35 @@
 # FlashCardGen
 
+## Overview
+FlashCardGen is a tool designed to help students and professionals efficiently study and review important content from PDF documents. By extracting relevant information from PDFs, it automatically generates clear and concise questions and answers, facilitating effective study sessions.
+
 ## Goals
+- Efficiently extract and summarize important information from PDFs.
+- Automatically generate questions and answers based on the extracted content for effective studying.
 
-- Efficiently extract and summarize important information from PDFs
-- Generate clear and concise questions and answers for effective studying
-- Provide a user-friendly interface for seamless interaction
+## Features
+- **PDF Extraction**: Extracts key information from PDF documents, including text and relevant data.
+- **Automatic Flashcard Generation**: Creates questions and answers based on the extracted content.
 
-## Requirement Pool
-P0: 
-- Extract important information from PDFs
-- Generate questions and answers from extracted information
-- Create a user-friendly interface for uploading, reviewing, and accessing flashcards
+## Requirements
+### P0:
+- **PDF Extraction**: Extract important information from PDFs.
+- **Flashcard Generation**: Generate clear and concise questions and answers based on the extracted information.
 
 ## Competitive Analysis
-- Flashcard App: A Limited PDF integration, lacks automatic question generation
-- StudyToolX: Offers PDF integration and question generation, but lacks user-friendly interface
-- FlashyCardsPro: User-friendly interface, but lacks automatic PDF information extraction
+- **Flashcard App**: Limited PDF integration, lacks automatic question generation.
+- **StudyToolX**: Offers PDF integration and question generation but lacks full automation.
+- **FlashyCardsPro**: Lacks automatic PDF information extraction.
 
-## Implementation approach
+## Implementation Approach
+FlashCardGen is implemented in a Jupyter notebook. The notebook leverages open-source libraries and frameworks to:
+- Extract important information from PDFs.
+- Automatically generate questions and answers.
 
-We will use Python as the programming language for this project. We will analyze the requirements to identify the difficult points and select appropriate open-source libraries and frameworks to efficiently extract and summarize important information from PDFs, generate clear and concise questions and answers, and provide a user-friendly interface for seamless interaction.
+## File List
+- **flashcardgen.pynb**: The Jupyter notebook that contains all the code for extracting information from PDFs and generating flashcards.
 
-## File list
-- main.py: Initiates the program execution.
-- pdf_processor.py: Extracts information from the provided PDF file.
-- flashcard_generator.py:
-    - Generates flashcards from the extracted information.
-    - Allows review of the generated flashcards.
-
-- user_interface.py:
-    - Uploads the PDF file to be processed.
-    - Displays the generated flashcards to the user.
+## Installation
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com//52Alexis/FlashCardGen.git
