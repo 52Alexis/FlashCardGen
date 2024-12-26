@@ -17,11 +17,15 @@ FlashCardGen is a tool designed to help students and professionals efficiently s
 - **Flashcard Generation**: Generate clear and concise questions and answers based on the extracted information.
 
 ## Competitive Analysis
-- **Flashcard App**: Limited PDF integration, lacks automatic question generation.
-- **StudyToolX**: Offers PDF integration and question generation but lacks full automation.
-- **FlashyCardsPro**: Lacks automatic PDF information extraction.
+| Feature                 | **Quizlet**                   | **Anki**                                | **Revisely**                     | **FlashCardGen** (Our Project)                 |
+|-------------------------|-------------------------------|------------------------------------------|-----------------------------------|-----------------------------------------------|
+| **Flashcard Creation**  | User creates flashcards manually. | Semi-automated with manual input options. | Semi-automated but requires edits. | Fully automated question and answer generation. |
+| **PDF Integration**     | No integration.               | No integration.                          | Allows PDF import but limited. | Extracts and summarizes PDF information efficiently. |
+| **Automation**          | Minimal (manual entry).       | Minimal (supports templates).            | Partial (PDF import and edits).   | End-to-end automated flashcard creation.      |
+| **Question Generation** | Not available.                | Limited template-based options.          | Available but requires manual input. | Fully automated and tailored questions.       |
+| **Ease of Use**         | Simple but time-consuming.    | Complex but powerful for advanced users. | Easy for semi-automated workflows. | Streamlined and efficient workflow.           |
 
-## Implementation Approach
+# Implementation Approach
 FlashCardGen is implemented in a Jupyter notebook. The notebook leverages open-source libraries and frameworks to:
 - Extract important information from PDFs.
 - Automatically generate questions and answers.
