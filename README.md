@@ -28,6 +28,9 @@ FlashCardGen is implemented in a Jupyter notebook. The notebook leverages open-s
 
 ## File List
 - **flashcardgen.ipynb**: The Jupyter notebook that contains all the code for extracting information from PDFs and generating flashcards.
+- **example_input.pdf**: Sample input file.
+- **flashcards.csv**: Sample output file.
+- **parsing**: UI prototype to manage different file formats.
 
 ## How to run the code
 1. Clone this repository to your local machine:
